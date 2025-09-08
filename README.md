@@ -1,9 +1,11 @@
-# A novel well-performing primality test over the Pell’s cubic
-*Last updated by Luca Di Domenico on November 5, 2024*
+# Novel performant primality test on a Pell’s cubic
+*Last updated on September 8, 2025*
 
 This Github repository contains two files: this README and one single Python file.
-The latter contains an implementation of a primality testing procedure built using linear recurring sequences arising from powers of an element lying inside the projectivization of the Pell's cubic.
-When the link of the corresponding mathematical paper will go live, you will be able to read it on arXiv by clicking [here](https://arxiv.org/abs/2411.01638).
+The latter contains an implementation of a novel primality testing procedure.
+This procedure runs linearly with respect to the length in binary of the analysed integer, and it is a primality criterion under $2^{36}$.
+It achieves these amazing results using linear recurring sequences arising from powers of an element lying inside the projectivization of the Pell's cubic.
+Please find the proof which classifies this algorithm as a primality test inside the official open-access mathematical paper [here](https://link.springer.com/article/10.1007/s00009-025-02839-w) or inside the arXiv pre-print [here](https://arxiv.org/abs/2411.01638).
 
 The code was tested using Python 3.8.10 and Sympy 1.12.
 Note that only the testing part of the code (see below the line `if __name__ == "__main__":`) requires to import the Sympy library, whereas all the functions defined in earlier lines require zero additional imports.
